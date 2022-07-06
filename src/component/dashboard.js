@@ -67,7 +67,6 @@ class Dashboard extends Component {
     render() {
         return (
             <>
-                <Header />
                 <div className='main_div'>
                     <div className='section_div'>
                         <div className='section_head'>
@@ -130,10 +129,6 @@ class Dashboard extends Component {
                                         <p className='para'>DM: <>{data.dm_name}</>(<a href='#'>{data.dm_mail}</a>)</p>
                                         <p className='para'>PM: <>{data.pm_name}</>(<a href='#'>{data.pm_mail}</a>)</p>
                                         <p className='para'>Lead: <>{data.lead_name}</>(<a href='#'>{data.lead_mail}</a>)</p>
-                                        <button className='send_mail'>
-                                            {/* Send Mail */}
-                                            <Link to='/email'>Send Mail</Link>
-                                        </button>
                                     </>
                                 )
                             })
